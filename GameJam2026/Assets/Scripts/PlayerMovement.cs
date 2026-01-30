@@ -94,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
             MaskIndicator.enabled = true;
             MaskIndicator.rectTransform.anchoredPosition = mask1IndicatorPos + maskIndicatorOffset;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2) && aquiredMask1)
+        if (Input.GetKeyDown(KeyCode.Alpha2) && aquiredMask2)
         {
             print("useing mask 2");
             selectedMask1 = false;
