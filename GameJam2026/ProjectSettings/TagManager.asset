@@ -8,6 +8,8 @@ TagManager:
   - Mask2
   - Mask3
   - Floor
+  - DeathTrigger
+  - CheckPoint
   layers:
   - Default
   - TransparentFX

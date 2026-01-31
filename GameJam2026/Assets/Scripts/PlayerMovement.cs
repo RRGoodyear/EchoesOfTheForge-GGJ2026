@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,10 +37,14 @@ public class PlayerMovement : MonoBehaviour
     public Image Mask1; 
     public Image Mask2;  
     public Image Mask3;
+    public TMP_Text deathCountText;
     
     private Vector2 mask1IndicatorPos; Vector2 mask2IndicatorPos; Vector2 mask3IndicatorPos;
     private Vector2 maskIndicatorOffset;
 
+    //checkpoint
+    private int playerDeathCount = 0;
+    private Transform recentCheckPoint;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -52,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         MaskIndicator.enabled = false; Mask1.enabled = false; Mask2.enabled = false; Mask3.enabled = false;
         mask1IndicatorPos = Mask1.rectTransform.anchoredPosition; mask2IndicatorPos = Mask2.rectTransform.anchoredPosition; mask3IndicatorPos = Mask3.rectTransform.anchoredPosition;
         maskIndicatorOffset = new Vector2(5, -50);
+        deathCountText.text = "Deaths: " + playerDeathCount.ToString();
     }
 
     // Update is called once per frame
@@ -171,6 +177,16 @@ public class PlayerMovement : MonoBehaviour
             aquiredMask3 = true;
             Mask3.enabled = true;
             collision.gameObject.SetActive(false);
+        }
+        if (collision.CompareTag("CheckPoint"))
+        {
+            recentCheckPoint = collision.transform;
+        }
+        if (collision.CompareTag("DeathTrigger"))
+        {
+            transform.position = recentCheckPoint.position;
+            playerDeathCount += 1;
+            deathCountText.text = "Deaths: " + playerDeathCount.ToString(); //update string
         }
     }
     private void OnCollisionStay2D(Collision2D collision)
