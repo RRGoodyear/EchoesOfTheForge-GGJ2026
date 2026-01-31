@@ -15,11 +15,16 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed = 10f;
     public float playerJumpAcceleration = 2;
     private int jumpAmount = 0;
+    private Rigidbody2D rb;
+    private float rbGravityOriginal;
 
     private bool canMove;
     private bool canJump;
+    private bool facingRight;
 
     public Camera mainCam;
+    public GameObject maskWhiteBox;
+    private SpriteRenderer maskWhiteBoxRend;
 
     private bool aquiredMask1 = false;
     private bool aquiredMask2 = false;
@@ -39,6 +44,9 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        rbGravityOriginal = rb.gravityScale;
+        maskWhiteBoxRend = maskWhiteBox.GetComponent<SpriteRenderer>();
         canMove = true;
         canJump = true;
         MaskIndicator.enabled = false; Mask1.enabled = false; Mask2.enabled = false; Mask3.enabled = false;
@@ -76,38 +84,46 @@ public class PlayerMovement : MonoBehaviour
         Player1Position += new Vector3(speedMove * 4, 0) * Time.deltaTime;
 
         //Setting movement keybinds to the axis the player is moving e.g. D moves the player right.
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && facingRight)
         {
             Player1Position = new Vector2((movementSpeed), ymove) * Time.deltaTime;
+            FlipPlayer();
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && !facingRight)
         {
             Player1Position = new Vector2(-(movementSpeed), ymove) * Time.deltaTime;
+            FlipPlayer();
         }
 
         
         if (Input.GetKeyDown(KeyCode.Alpha1) && aquiredMask1)
         {
             print("useing mask 1");
+            rb.gravityScale /= 2;
             selectedMask1 = true;
             MaskIndicator.enabled = true;
             MaskIndicator.rectTransform.anchoredPosition = mask1IndicatorPos + maskIndicatorOffset;
+            maskWhiteBoxRend.color = Mask1.color;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && aquiredMask2)
         {
             print("useing mask 2");
+            rb.gravityScale = rbGravityOriginal;
             selectedMask1 = false;
             MaskIndicator.enabled = true;
             MaskIndicator.rectTransform.anchoredPosition = mask2IndicatorPos + maskIndicatorOffset;
+            maskWhiteBoxRend.color = Mask2.color;
         }
         if (Input.GetKeyDown(KeyCode.Alpha3) && aquiredMask3)
         {
+            rb.gravityScale = rbGravityOriginal;
             mainCam.cullingMask |= 1 << LayerMask.NameToLayer("Mask3LayerNew"); //add layer
             mainCam.cullingMask &= ~(1 << LayerMask.NameToLayer("Mask3LayerOriginal")); //remove layer
             selectedMask1 = false;
             MaskIndicator.enabled = true;
             MaskIndicator.rectTransform.anchoredPosition = mask3IndicatorPos + maskIndicatorOffset;
+            maskWhiteBoxRend.color = Mask3.color;
         }
         if (Input.GetKeyUp(KeyCode.Alpha3) && aquiredMask3)
         {
@@ -122,8 +138,19 @@ public class PlayerMovement : MonoBehaviour
         //Accessing the "AddForce" method of RigidBody2D to move the player up times the playerJumpAcceleration (a declared variable).
         if (jumpAmount < 1)
         {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpAcceleration);
+            rb.AddForce(Vector2.up * playerJumpAcceleration);
         }
+            
+    
+    }
+    void FlipPlayer()
+    {
+        facingRight = !facingRight;
+        //Accessing the scale of the game objetcs transform.
+        Vector2 localScale = gameObject.transform.localScale;
+        //Changing the scale of game object a negative (resulting in the sprite flipping).
+        localScale.x *= -1;
+        transform.localScale = localScale;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
