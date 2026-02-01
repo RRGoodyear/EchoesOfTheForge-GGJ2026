@@ -9,7 +9,7 @@ public class CheckPoint : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        checkPointReachedText.text = "";
+        //checkPointReachedText.text = "";
     }
 
     // Update is called once per frame
@@ -22,14 +22,14 @@ public class CheckPoint : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            checkPointReachedText.text = "Checkpoint Reached!";
+            //checkPointReachedText.text = "Checkpoint Reached!";
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            checkPointReachedText.text = "";
+            //checkPointReachedText.text = "";
         }
     }
 }

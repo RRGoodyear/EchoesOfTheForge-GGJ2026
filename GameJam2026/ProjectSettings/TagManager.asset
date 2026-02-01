@@ -10,6 +10,7 @@ TagManager:
   - Floor
   - DeathTrigger
   - CheckPoint
+  - Sticky
   layers:
   - Default
   - TransparentFX

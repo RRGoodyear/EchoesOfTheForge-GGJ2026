@@ -31,9 +31,13 @@ public class Parallax : MonoBehaviour
         //How much camera moved since previous frame.
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
 
-        //Makes the background follow the camera; the higher the multiplier the more delay on the background giving the parallax effect.
-        transform.position += new Vector3(deltaMovement.x * parallaxEffectMultiplier.x, deltaMovement.y * parallaxEffectMultiplier.y);
-        lastCameraPosition = cameraTransform.position;
+        if (deltaMovement.sqrMagnitude > 0.0001f)
+        {
+            //Makes the background follow the camera; the higher the multiplier the more delay on the background giving the parallax effect.
+            transform.position += new Vector3(deltaMovement.x * parallaxEffectMultiplier.x, deltaMovement.y * parallaxEffectMultiplier.y);
+            lastCameraPosition = cameraTransform.position;
+        }
+        
 
         //Makes it so the background repositions when player is close to the end of it.
         if (Mathf.Abs(cameraTransform.position.x - transform.position.x) >= textureUnitSizeX)

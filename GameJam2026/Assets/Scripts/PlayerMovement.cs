@@ -54,8 +54,17 @@ public class PlayerMovement : MonoBehaviour
     //checkpoint
     private int playerDeathCount = 0;
     private Transform recentCheckPoint;
+
+    private bool gravityReversed = false;
+
+    public GameObject grandpa;
+    public AudioSource mask1Pickup;
+    public AudioSource mask2Pickup;
+    public AudioSource mask3Pickup;
     private void Awake()
     {
+        Application.targetFrameRate = 60;
+        QualitySettings.vSyncCount = 1;
         for (int i = 0;  i < notDestroy.Length; i++)
         {
             DontDestroyOnLoad(notDestroy[i]);
@@ -71,11 +80,13 @@ public class PlayerMovement : MonoBehaviour
         maskWhiteBoxRend = maskWhiteBox.GetComponent<SpriteRenderer>();
         canMove = true;
         canJump = true;
-        MaskIndicator.enabled = false; Mask1.enabled = false; Mask2.enabled = false; Mask3.enabled = false;
+        MaskIndicator.enabled = false; Mask1.enabled = true; Mask2.enabled = true; Mask3.enabled = true;
+        Mask1.color = Color.black; Mask2.color = Color.black; Mask3.color = Color.black;
         mask1IndicatorPos = Mask1.rectTransform.anchoredPosition; mask2IndicatorPos = Mask2.rectTransform.anchoredPosition; mask3IndicatorPos = Mask3.rectTransform.anchoredPosition;
         maskIndicatorOffset = new Vector2(5, -50);
         deathCountText.text = "Deaths: " + playerDeathCount.ToString();
         playerCollider = GetComponent<Collider2D>();
+        grandpa.SetActive(false);
         
     }
     private void FixedUpdate()
@@ -92,14 +103,18 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1) && aquiredMask1)
         {
             print("useing mask 1");
-            rb.gravityScale *= 1.5f; playerJumpAcceleration *= 1.8f;
+            if (gravityReversed)
+            {
+                rb.gravityScale = rbGravityOriginal;
+                //rb.gravityScale *= -1;
+                gravityReversed = false;
+            }
+            rb.gravityScale *= 1.8f; playerJumpAcceleration *= 1.8f;
             playerCollider.sharedMaterial = normalPhysicalMat;
             selectedMask1 = true; selectedMask2 = false; selectedMask3 = false;
             MaskIndicator.enabled = true;
             MaskIndicator.rectTransform.anchoredPosition = mask1IndicatorPos + maskIndicatorOffset;
             maskWhiteBoxRend.color = Mask1.color;
-
-            
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && aquiredMask2)
         {
@@ -163,12 +178,21 @@ public class PlayerMovement : MonoBehaviour
             if (!stickySurface)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y);
+                rb.gravityScale = rbGravityOriginal;
             }
             if (stickySurface)
             {
                 rb.linearVelocity = new Vector2(0, 0);
-                //rb.mass = 0.0f;
+                if (!gravityReversed)
+                {
+                    rb.gravityScale *= -4;
+                    gravityReversed = true;
+                }
             }
+        }
+        if (selectedMask3)
+        {
+            rb.linearVelocity = new Vector2(-speedMove * movementSpeed, rb.linearVelocity.y);
         }
     }
     void Jump()
@@ -196,18 +220,25 @@ public class PlayerMovement : MonoBehaviour
         {
             aquiredMask1 = true;
             Mask1.enabled = true;
+            Mask1.color = Color.white;
+            mask1Pickup.Play();
+            grandpa.SetActive(true);
             collision.gameObject.SetActive(false);
         }
         if (collision.CompareTag("Mask2"))
         {
             aquiredMask2 = true;
             Mask2.enabled = true;
+            Mask2.color = Color.white;
+            mask2Pickup.Play();
             collision.gameObject.SetActive(false);
         }
         if (collision.CompareTag("Mask3"))
         {
             aquiredMask3 = true;
             Mask3.enabled = true;
+            Mask3.color = Color.white;
+            mask3Pickup.Play();
             collision.gameObject.SetActive(false);
         }
         if (collision.CompareTag("CheckPoint"))
@@ -223,14 +254,14 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor") && selectedMask2)
+        if (collision.gameObject.CompareTag("Sticky") && selectedMask2)
         {
             stickySurface = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
+        if (collision.gameObject.CompareTag("Sticky"))
         {
             stickySurface = false;
         }

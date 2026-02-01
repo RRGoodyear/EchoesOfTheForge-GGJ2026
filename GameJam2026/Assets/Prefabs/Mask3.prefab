@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9058084177269843591}
   - component: {fileID: 8327127243061249436}
   - component: {fileID: 1294533134121607905}
+  - component: {fileID: 7486517188211885288}
   m_Layer: 7
   m_Name: Mask3
   m_TagString: Mask3
@@ -152,3 +153,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7486517188211885288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068944089258778069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2deb2bf47e81941891b8cf4fa1cd2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
