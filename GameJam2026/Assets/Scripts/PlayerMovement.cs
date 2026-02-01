@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     //This variable is set to read whether the player is facing right or left and if so, flip the character sprite accordingly.
     float xmoveHorizontal = 0.0f;
+    public float speedMove;
 
     //Movement speed value; higher it is the faster the sprite moves.
     public float movementSpeed = 10f;
@@ -30,7 +31,9 @@ public class PlayerMovement : MonoBehaviour
     private bool aquiredMask1 = false;
     private bool aquiredMask2 = false;
     private bool aquiredMask3 = false;
-    private bool selectedMask1 = false;
+    public bool selectedMask1 = false;
+    public bool selectedMask2 = false;
+    public bool selectedMask3 = false;
 
     //UI
     public Image MaskIndicator;
@@ -86,14 +89,16 @@ public class PlayerMovement : MonoBehaviour
         //Makes the variable number equal the Horizontal Axis.
         xmoveHorizontal = Input.GetAxis("Horizontal");
 
-        float speedMove = Input.GetAxis("Horizontal");
+        speedMove = Input.GetAxis("Horizontal");
         Player1Position += new Vector3(speedMove * 4, 0) * Time.deltaTime;
+        
 
         //Setting movement keybinds to the axis the player is moving e.g. D moves the player right.
         if (Input.GetKey(KeyCode.D) && facingRight)
         {
             Player1Position = new Vector2((movementSpeed), ymove) * Time.deltaTime;
             FlipPlayer();
+            
         }
 
         if (Input.GetKey(KeyCode.A) && !facingRight)
@@ -107,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
         {
             print("useing mask 1");
             rb.gravityScale /= 2;
-            selectedMask1 = true;
+            selectedMask1 = true; selectedMask2 = false; selectedMask3 = false;
             MaskIndicator.enabled = true;
             MaskIndicator.rectTransform.anchoredPosition = mask1IndicatorPos + maskIndicatorOffset;
             maskWhiteBoxRend.color = Mask1.color;
@@ -116,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
         {
             print("useing mask 2");
             rb.gravityScale = rbGravityOriginal;
-            selectedMask1 = false;
+            selectedMask1 = false; selectedMask2 = true; selectedMask3 = false;
             MaskIndicator.enabled = true;
             MaskIndicator.rectTransform.anchoredPosition = mask2IndicatorPos + maskIndicatorOffset;
             maskWhiteBoxRend.color = Mask2.color;
@@ -126,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
             rb.gravityScale = rbGravityOriginal;
             mainCam.cullingMask |= 1 << LayerMask.NameToLayer("Mask3LayerNew"); //add layer
             mainCam.cullingMask &= ~(1 << LayerMask.NameToLayer("Mask3LayerOriginal")); //remove layer
-            selectedMask1 = false;
+            selectedMask1 = false; selectedMask2 = false; selectedMask3 = true;
             MaskIndicator.enabled = true;
             MaskIndicator.rectTransform.anchoredPosition = mask3IndicatorPos + maskIndicatorOffset;
             maskWhiteBoxRend.color = Mask3.color;
