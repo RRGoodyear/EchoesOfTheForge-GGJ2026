@@ -33,7 +33,7 @@ Welcome to **Echoes of the Forge**, a challenging platformer game created for th
   - Drawback: You **can no longer see regular platforms**, which makes navigation trickier.
 
 ## Technology Used
-
+- **Unity Engine**: For the development of the game.
 - **FL Studio**: For creating the game's music and sound effects.  
 - **ProCreate**: For pixel art and game art design.  
 - **DaVinci Resolve**: For editing the game's trailer and main video.
