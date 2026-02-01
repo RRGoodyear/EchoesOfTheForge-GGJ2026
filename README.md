@@ -1,6 +1,6 @@
 # Echoes of the Forge
 
-Welcome to **Echoes of the Forge**, a challenging platformer game created for the Global Game Jam 2026 @ BCU. In this game, you return to the village where you grew up, only to find your grandpa asking you to bring his three magical masks back to the forge. To do so, you must navigate through three unique biomes, each presenting its own dangers. Each mask grants you incredible powers, but beware: the drawbacks can be just as perilous!
+Welcome to **Echoes of the Forge**, a challenging platformer game created for the Global Game Jam 2026 @ BCU for the "Mask" theme! In this game, you return to the village where you grew up, only to find your grandpa asking you to bring his three magical masks back to the forge. To do so, you must navigate through three unique biomes, each presenting its own dangers. Each mask grants you incredible powers, but beware: the drawbacks can be just as perilous!
 
 [Echoes of the Forge](https://globalgamejam.org/games/2026/echoes-forge-8)
 
