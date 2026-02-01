@@ -51,7 +51,7 @@ Welcome to **Echoes of the Forge**, a challenging platformer game created for th
 
 ## Installation
 
-To play **Echoes of the Forge**, you go to the jam site link to download the exe!
+To play **Echoes of the Forge**, download the zip in the releases section, or visit ![our Itch.io release page](https://ryan-goodyear.itch.io/echoes-of-the-forge) to play in your browser now!
 
 ## License
 
