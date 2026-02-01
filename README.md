@@ -2,7 +2,7 @@
 
 Welcome to **Echoes of the Forge**, a challenging platformer game created for the Global Game Jam 2026 @ BCU. In this game, you return to the village where you grew up, only to find your grandpa asking you to bring his three magical masks back to the forge. To do so, you must navigate through three unique biomes, each presenting its own dangers. Each mask grants you incredible powers, but beware: the drawbacks can be just as perilous!
 
-![Echoes of the Forge](https://globalgamejam.org/games/2026/echoes-forge-8)
+[Echoes of the Forge](https://globalgamejam.org/games/2026/echoes-forge-8)
 
 ## How to Play
 
@@ -51,7 +51,7 @@ Welcome to **Echoes of the Forge**, a challenging platformer game created for th
 
 ## Installation
 
-To play **Echoes of the Forge**, download the zip in the releases section, or visit ![our Itch.io release page](https://ryan-goodyear.itch.io/echoes-of-the-forge) to play in your browser now!
+To play **Echoes of the Forge**, download the zip in the releases section, or visit [our Itch.io release page](https://ryan-goodyear.itch.io/echoes-of-the-forge) to play in your browser now!
 
 ## License
 
