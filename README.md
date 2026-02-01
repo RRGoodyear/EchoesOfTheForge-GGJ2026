@@ -14,9 +14,9 @@ Welcome to **Echoes of the Forge**, a challenging platformer game created for th
   - Press **SPACE** to jump.
 
 - **Change Masks**:  
-  - Press **1** to equip Mask 1.  
-  - Press **2** to equip Mask 2.  
-  - Press **3** to equip Mask 3.
+  - Press **1** to equip the Village Mask.  
+  - Press **2** to equip the Forest Mask.  
+  - Press **3** to equip the Mountain Mask.
 
 ## Abilities of the Masks
 
@@ -30,7 +30,7 @@ Welcome to **Echoes of the Forge**, a challenging platformer game created for th
 
 - **Mask 3**:  
   - Gives you the ability to **see hidden platforms** that are invisible to the naked eye.  
-  - Drawback: You **can no longer see regular platforms**, which makes navigation trickier.
+  - Drawback: You **can no longer see regular platforms** and your controls become inverted, which makes navigation trickier.
 
 ## Technology Used
 - **Unity Engine**: For the development of the game.
