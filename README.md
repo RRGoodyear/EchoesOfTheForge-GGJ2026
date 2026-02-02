@@ -47,7 +47,7 @@ Welcome to **Echoes of the Forge**, a challenging platformer game created for th
   - Music & Sound: [Maciej M]
 
 - **Special Thanks**:  
-  - To the Global Game Jam community and BCU for the inspiration and support.
+  - To the Global Game Jam 2026 community and BCU for the inspiration and support. 
 
 ## Installation
 
