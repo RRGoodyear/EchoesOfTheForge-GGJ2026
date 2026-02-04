@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: ad0529867bf54e847ac348272cf69597
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6713356849887682763
+    second: rollingdogsplash_0
+  - first:
+      213: -7628415153010451964
+    second: rollingdogsplash_1
+  - first:
+      213: 7490473236268712329
+    second: rollingdogsplash_2
+  - first:
+      213: 3482046693939964362
+    second: rollingdogsplash_3
+  - first:
+      213: -2033565434977130320
+    second: rollingdogsplash_4
+  - first:
+      213: 4249969737004672694
+    second: rollingdogsplash_5
+  - first:
+      213: 8314796735047608213
+    second: rollingdogsplash_6
+  - first:
+      213: 8526618330136074271
+    second: rollingdogsplash_7
+  - first:
+      213: -1068313825640702971
+    second: rollingdogsplash_8
+  - first:
+      213: -1955174140839194857
+    second: rollingdogsplash_9
+  - first:
+      213: -5925663217015104149
+    second: rollingdogsplash_10
+  - first:
+      213: 4803220653359472562
+    second: rollingdogsplash_11
+  - first:
+      213: -359210491675745303
+    second: rollingdogsplash_12
+  - first:
+      213: -5130470116543817127
+    second: rollingdogsplash_13
+  - first:
+      213: -7878529564342662828
+    second: rollingdogsplash_14
+  - first:
+      213: 8050035069441730842
+    second: rollingdogsplash_15
+  - first:
+      213: -1359202355670012386
+    second: rollingdogsplash_16
+  - first:
+      213: -765576937295982898
+    second: rollingdogsplash_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rollingdogsplash_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 135
+        width: 359
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0adff6c72aa2d50800000000000000
+      internalID: 6713356849887682763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_1
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 100
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ada9dd5dc622690800000000000000
+      internalID: -7628415153010451964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 99
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9810e5fd8b183f760800000000000000
+      internalID: 7490473236268712329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 95
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac96d9bf407b25030800000000000000
+      internalID: 3482046693939964362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 94
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8ecacd20357c3e0800000000000000
+      internalID: -2033565434977130320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_5
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 93
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6e25065fceafa30800000000000000
+      internalID: 4249969737004672694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 94
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597271ca397146370800000000000000
+      internalID: 8314796735047608213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_7
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 96
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18581ff132a45670800000000000000
+      internalID: 8526618330136074271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_8
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 92
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c1c0a5c369c21f0800000000000000
+      internalID: -1068313825640702971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_9
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 97
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f00455a73ddd4e0800000000000000
+      internalID: -1955174140839194857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_10
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 96
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d573b13b0d3cda0800000000000000
+      internalID: -5925663217015104149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_11
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 28
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf9f455cb778a240800000000000000
+      internalID: 4803220653359472562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3e21406f3d30bf0800000000000000
+      internalID: -359210491675745303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_13
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 27
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a16a48c98ecc8b0800000000000000
+      internalID: -5130470116543817127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_14
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 29
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45941fc7a17d9a290800000000000000
+      internalID: -7878529564342662828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_15
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 26
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19e287ae3877bf60800000000000000
+      internalID: 8050035069441730842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_16
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 25
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e2a6ca8a4232de0800000000000000
+      internalID: -1359202355670012386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rollingdogsplash_17
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 22
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ececd3ce4df1065f0800000000000000
+      internalID: -765576937295982898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rollingdogsplash_0: 6713356849887682763
+      rollingdogsplash_1: -7628415153010451964
+      rollingdogsplash_10: -5925663217015104149
+      rollingdogsplash_11: 4803220653359472562
+      rollingdogsplash_12: -359210491675745303
+      rollingdogsplash_13: -5130470116543817127
+      rollingdogsplash_14: -7878529564342662828
+      rollingdogsplash_15: 8050035069441730842
+      rollingdogsplash_16: -1359202355670012386
+      rollingdogsplash_17: -765576937295982898
+      rollingdogsplash_2: 7490473236268712329
+      rollingdogsplash_3: 3482046693939964362
+      rollingdogsplash_4: -2033565434977130320
+      rollingdogsplash_5: 4249969737004672694
+      rollingdogsplash_6: 8314796735047608213
+      rollingdogsplash_7: 8526618330136074271
+      rollingdogsplash_8: -1068313825640702971
+      rollingdogsplash_9: -1955174140839194857
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
